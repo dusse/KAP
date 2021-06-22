@@ -1,0 +1,7 @@
+export LD_LIBRARY_PATH=‘…/hdf5/lib/'
+
+#export HDF5_DISABLE_VERSION_CHECK='1'
+
+MPI=…/libs/openmpi/bin/
+$MPI/mpirun -n 1 kap.exe
+#$MPI/mpirun -n $CORES kap.exe $INPUT
