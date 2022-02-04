@@ -10,13 +10,13 @@ class Initializer:
         self.inputFile = ".../plasmoids/pl012/tilt_laser3D_6.h5"
         self.f = h5py.File(self.inputFile, 'r')
         
-        self.Bx = np.array(self.f['vars/8_0'])
-        self.By = np.array(self.f['vars/8_1'])
-        self.Bz = np.array(self.f['vars/8_2'])
+        self.Bx = np.array(self.f['vars/b_0'])
+        self.By = np.array(self.f['vars/b_1'])
+        self.Bz = np.array(self.f['vars/b_2'])
         
-        self.Ex = np.array(self.f['vars/0_0'])
-        self.Ey = np.array(self.f['vars/0_1'])
-        self.Ez = np.array(self.f['vars/0_2'])
+        self.Ex = np.array(self.f['vars/e_0'])
+        self.Ey = np.array(self.f['vars/e_1'])
+        self.Ez = np.array(self.f['vars/e_2'])
         
         self.f.close()
         
